@@ -1,9 +1,9 @@
 # UiPath_OpenAI_Integration
 Integrating OpenAI with UiPath Automation Robot that works on Custom DataSet.
 
-This is to integrate Generative AI capabalities to a Automation Robot developed using UiPath. This Automation makes a call to a function: AnalyzeDataset in a external Python Script file and returns the response back to the UiPath Workflow.
+This is to integrate Generative AI capabalities to a Automation Robot developed using UiPath. This Automation makes a call to a function: AnalyzeDataset() in a external Python Script file and returns the response back to the UiPath Workflow.
 
-This code was initially developed in a transitional way when there was no in-built activity available in UiPath. The latest versions of UiPath do have a activity for this however this has it's own limitations. If you need to run the OpenAI APIs in UiPath on your own dataset i.e. Custom Dataset you can achive this by integrating Python Script in UiPath Workflows.
+This code was initially developed in a transitional way when there was no in-built activity available in UiPath. The latest versions of UiPath do have a activity for this however this has it's own limitations. If you need to run the OpenAI APIs in UiPath on your own dataset i.e. Custom Dataset you can achive this by integrating Python Script in UiPath Workflows. The Python Script uploaded as an example that works on PDF data files parked in a floder, this code can also be modified to work on CSV files as required. You have to pass the query string as a parameter to the Python function AnalyzeDataset() from UiPath Workflow and this will happen from UiPath Interface.
 
 In UiPath Workflow: I have created a Attend Bot with simple interface to demonstrate & to enter user queries and capture the response and display the same. The same can also be implemented as a Unattened Bot as well depending on your requirements.
 
